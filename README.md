@@ -21,11 +21,11 @@ sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-d
 ************************************************************
 ورأهأَ خلي👇🏿
 **************
-git clone https://github.com/jozeff3/devill.git
+git clone https://github.com/TeamTop/Uor
 *****************************************************
 ورهأ خلي 👇🏿 And vinegary
 **************************
-cd devill
+cUor
 **************************
 ورهأَ خلي👇🏿 And vinegary
 **************************
