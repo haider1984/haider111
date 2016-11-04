@@ -1,3 +1,4 @@
+
 do
 
 local function run(msg, matches)
@@ -21,9 +22,12 @@ return [[
 /leave :: البوت يخرج من المجموعة | ⛔️
 /import +دخول البوت للكروب بالرابط    :: رابط | 🚸 
 
-
-:::::::::::::::::::::::::::::::::::
-
+♻️〰〰〰〰〰〰〰〰〰♻
+https://telegram.me/joinchat/Dc0SDEGKMxbLKDilBccdiQ
+♻️〰〰〰〰〰〰〰〰〰♻️ 
+💠 pro :- Ahmed jabbar Kasad 
+🌟 dev :- @ahmedjabbar1 
+📺 Cha :- @TeamTop
 
 ]]
 end
