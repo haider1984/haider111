@@ -39,7 +39,12 @@ if is_momod(msg) and matches[1] == 'م2' then
 🔹طريقة استخدام الاوامر 🔹
 🔹 قفل + الامر - للقفل
 🔹 فتح + الامر - للفتح
-::::::::::::::::::::::::::::::::::::::::
+♻️〰〰〰〰〰〰〰〰〰♻
+https://telegram.me/joinchat/Dc0SDEGKMxbLKDilBccdiQ
+♻️〰〰〰〰〰〰〰〰〰♻️ 
+💠 pro :- Ahmed jabbar Kasad 
+🌟 dev :- @ahmedjabbar1 
+📺 Cha :- @TeamTop
     ]]
   reply_msg(reply_id, ghost, ok_cb, false) 
 end 
