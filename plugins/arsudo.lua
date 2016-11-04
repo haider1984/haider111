@@ -15,6 +15,13 @@ local text = [[
 🔹- تحويل سوبر :: تحويل الكروب سوبر | 🚀
 🔹- غادر :: البوت يخرج من المجموعة | ⛔️
 
+♻️〰〰〰〰〰〰〰〰〰♻
+https://telegram.me/joinchat/Dc0SDEGKMxbLKDilBccdiQ
+♻️〰〰〰〰〰〰〰〰〰♻️ 
+💠 pro :- Ahmed jabbar Kasad 
+🌟 dev :- @ahmedjabbar1 
+📺 Cha :- @TeamTop      
+      
 ]]
 reply_msg(reply_id, text, ok_cb, false)
 end 
