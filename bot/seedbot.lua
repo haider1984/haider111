@@ -241,7 +241,7 @@ function create_config( )
     "ar_fwd",
     "ar_banhammer",
     "sudolist",
-    "add_replay
+    "add_replay"
     },
     sudo_users = {231543308,0,tonumber(our_id)},--Sudo users
     disabled_channels = {},
