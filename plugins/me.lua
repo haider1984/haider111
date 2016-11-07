@@ -1,40 +1,28 @@
---[[ 
-$ :) 
--- - ( #MASCO_ماسكو ) - -- 
-$ :) 
--- - ( @IQ_ABS ) - -- 
-$ :) 
---Channel-( @DEV_PROX )-- 
-$ :) 
-]]-- 
-do 
+do
+local function kasper(msg,matches)
+if is_sudo(msg) then
+local text = 'مہرحہبہآً🌹{@'..(msg.from.username or "erorr")..'}\n'..'{آنہتہ 🙊 مہطہؤر 🕵 آلبہؤتہ 🤖 عہزيہزيہ}'..'\n'..'آسہمہكہ☺️{'..(msg.from.first_name or "erorr")..'}\n'..'آيہديہكہ🆔{'..msg.from.id..'}\n'..'رقہمہكہ🔢{'..(msg.from.phone or "erorr")..'}\n'..'عہدد آعہضہآء☯{'..(msg.to.members_num or "erorr")..'}\n'..'آيہديہ كہرؤبہ♍️{'..(msg.to.id or "erorr")..'}\n'..'آسہمہ كہرؤبہ⛎{'..(msg.to.title or "erorr")..'}\n'..'{قہنہآهہ تہطہؤيہر}<>{@@TeamTop}'
+return reply_msg(msg.id, text, ok_cb, false) 
+else
+if is_owner(msg) then
+local text = 'مہرحہبہآً🌹{@'..(msg.from.username or "erorr")..'}\n'..'{آنہتہ 🙊 مہديہر 👨 آلكہرؤبہ 🙈 عہزيہزيہ}'..'\n'..'آسہمہكہ☺️{'..(msg.from.first_name or "erorr")..'}\n'..'آيہديہكہ🆔{'..msg.from.id..'}\n'..'رقہمہكہ🔢{'..(msg.from.phone or "erorr")..'}\n'..'عہدد آعہضہآء☯{'..(msg.to.members_num or "erorr")..'}\n'..'آيہديہ كہرؤبہ♍️{'..(msg.to.id or "erorr")..'}\n'..'آسہمہ كہرؤبہ⛎{'..(msg.to.title or "erorr")..'}\n'..'{قہنہآهہ تہطہؤيہر}<>{@@TeamTop}'
+return reply_msg(msg.id, text, ok_cb, false)
+else
+if is_momod(msg) then
+local text = 'مہرحہبہآً🌹{@'..(msg.from.username or "erorr")..'}\n'..'{آنہتہ 🙊 آدمہنہ 😻 عہزيہزيہ}'..'\n'..'آسہمہكہ☺️{'..(msg.from.first_name or "erorr")..'}\n'..'آيہديہكہ🆔{'..msg.from.id..'}\n'..'رقہمہكہ🔢{'..(msg.from.phone or "erorr")..'}\n'..'عہدد آعہضہآء☯{'..(msg.to.members_num or "erorr")..'}\n'..'آيہديہ كہرؤبہ♍️{'..(msg.to.id or "erorr")..'}\n'..'آسہمہ كہرؤبہ⛎{'..(msg.to.title or "erorr")..'}\n'..'{قہنہآهہ تہطہؤيہر}<>{@TeamTop}'
+return reply_msg(msg.id, text, ok_cb, false)
+else
+if not is_momod(msg) then
+local text = 'مہرحہبہآً🌹{@'..(msg.from.username or "erorr")..'}\n'..'{آنہتہ 🙊 عہضہؤ 😽 عہزيہزيہ}'..'\n'..'آسہمہكہ☺️{'..(msg.from.first_name or "erorr")..'}\n'..'آيہديہكہ🆔{'..msg.from.id..'}\n'..'رقہمہكہ🔢{'..(msg.from.phone or "erorr")..'}\n'..'عہدد آعہضہآء☯{'..(msg.to.members_num or "erorr")..'}\n'..'آيہديہ كہرؤبہ♍️{'..(msg.to.id or "erorr")..'}\n'..'آسہمہ كہرؤبہ⛎{'..(msg.to.title or "erorr")..'}\n'..'{قہنہآهہ تہطہؤيہر}<>{@TeamTop}'
+return reply_msg(msg.id, text, ok_cb, false)
+end
+end
+return {
+patterns = {
+"^[/!#](me)",
+"^(موقعي)$",
+},
+run = kasper
+}
 
-local function iq_abs(msg, matches) 
-if is_sudo(msg) then 
-        local text = "أنـت مـطـور الـبـؤت 🕵🔧".."\n".."🆔 - أيـۧديـۧک : "..msg.from.id.."\n".."🏧- أســمـك : "..msg.from.first_name.."\n".."🚸- مــعــرفــك  : @"..msg.from.username.."\n".."©- أســم ألـمـجـمـوعـة : "..msg.to.title.."\n"..'📱 - رقـۖـمـۗـک : '..(msg.from.phone or "لُايَوَجْدِ ⛔️‼️")
-        return reply_msg(msg.id, text, ok_cb, false) 
-     end 
-if is_momod(msg) then 
-        local text = "أنـت أدمــن ألـكـروب 🛳⚓️".."\n".."🆔 - أيـۧديـۧک : "..msg.from.id.."\n".."🏧- أســمـك : "..msg.from.first_name.."\n".."🚸- مــعــرفــك : @"..msg.from.username.."\n".."©- أســم ألـمـجـمـوعـة : "..msg.to.title.."\n"..'📱 - رقـۖـمـۗـک : '..(msg.from.phone or "لُايَوَجْدِ ⛔️‼️")
-        return reply_msg(msg.id, text, ok_cb, false) 
-     end 
-if not is_momod(msg) then 
-        local text = "أنـت عـضـوو 😹💙".."\n".."🆔 - أيـۧديـۧک : "..msg.from.id.."\n".."🏧- أســمـك : "..msg.from.first_name.."\n".."🚸- مــعــرفــك : @"..msg.from.username.."\n".."©- أسـم ألـمـجـمـوعـة : "..msg.to.title.."\n"..'📱 - رقـۖـمـۗـک : '..(msg.from.phone or "لُايَوَجْدِ ⛔️‼️")
-        return reply_msg(msg.id, text, ok_cb, false) 
-     end 
-if is_owner(msg) then 
-        local text = "أنـت مــديــر ألـكـروب 🤖🤘🏼".."\n".."🆔 - أيـۧديـۧک : "..msg.from.id.."\n".."🏧- أســمـك : "..msg.from.first_name.."\n".."🚸- مــعــرفــك  : @"..msg.from.username.."\n".."©- أســم ألـمـجـمـوعـة : "..msg.to.title.."\n"..'📱 - رقـۖـمـۗـک : '..(msg.from.phone or "لُايَوَجْدِ ⛔️‼️")
-        return reply_msg(msg.id, text, ok_cb, false) 
-     end 
-     end 
-
-return { 
-  patterns = { 
-       "^(موقعي)$", 
-  }, 
-  run = iq_abs, 
-} 
-
-end 
-
--- 
+end
