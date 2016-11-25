@@ -27,11 +27,11 @@ sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-d
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
-git clone https://github.com/TeamTop/Uor.git
+git clone https://github.com/haider1984/haider111.git
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
-cd Uor
+cd haider
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -56,4 +56,4 @@ chmod +x launch.sh
 التنصيب السورس بكود واحد 
 
 
-sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-dev libevent-dev libjansson* libpython-dev make unzip git redis-server g++ -y --force-yes && git clone https://github.com/TeamTop/Uor.git && cd Uor && chmod +x launch.sh && ./launch.sh install && ./launch.sh
+sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-dev libevent-dev libjansson* libpython-dev make unzip git redis-server g++ -y --force-yes && git clone https://github.com/haider1984/haider111.git && cd haider && chmod +x launch.sh && ./launch.sh install && ./launch.sh
